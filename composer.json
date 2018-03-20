@@ -2,7 +2,7 @@
     "repositories" : [
         {
             "type" : "vcs",
-            "url" : "https://github.com/pagarme/git-hooks.git"
+            "url" : "git@github.com:pagarme/git-hooks.git"
         }
     ],
     "name": "pagarme/pagarme-php",

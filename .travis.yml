@@ -6,7 +6,7 @@ php:
   - '7.0'
 before_script:
   - mkdir -p build/logs
-  - composer install --no-interaction --prefer-dist --dev
+  - composer install --no-interaction --prefer-dist
   - composer require satooshi/php-coveralls:* --dev
 script:
   - vendor/bin/phpunit
