@@ -107,7 +107,10 @@ class TransactionCreate implements RequestInterface
                 'street_number' => $address->getStreetNumber(),
                 'complementary' => $address->getComplementary(),
                 'neighborhood'  => $address->getNeighborhood(),
-                'zipcode'       => $address->getZipcode()
+                'zipcode'       => $address->getZipcode(),
+                'city'          => $address->getCity(),
+                'state'         => $address->getState(),
+                'country'       => $address->getCountry()
             ]
         ];
     }
