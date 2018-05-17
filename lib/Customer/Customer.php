@@ -12,6 +12,31 @@ class Customer
     private $id;
 
     /**
+     * @var int
+     */
+    private $externalId;
+
+    /**
+     * @var string
+     */
+    private $type;
+
+    /**
+     * @var string
+     */
+    private $country;
+
+    /**
+     * @var array
+     */
+    private $phoneNumbers;
+
+    /**
+     * @var array PagarMe\Sdk\Document
+     */
+    private $documents;
+
+    /**
      * @var PagarMe\Sdk\Customer\Address
      */
     private $address;
@@ -71,6 +96,48 @@ class Customer
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     * @return int
+     */
+    public function getExternalId()
+    {
+        return $this->externalId;
+    }
+
+    /**
+     * @codeCoverageIgnore
+     * @return string
+     */
+    public function getType()
+    {
+        return $this->type;
+    }
+
+    /**
+     * @var string
+     */
+    public function getCountry()
+    {
+        return $this->country;
+    }
+
+    /**
+     * @var array
+     */
+    public function getPhoneNumbers()
+    {
+        return $this->phoneNumbers;
+    }
+
+    /**
+     * @var array PagarMe\Sdk\Document
+     */
+    public function getDocuments()
+    {
+        return $this->documents;
     }
 
     /**
